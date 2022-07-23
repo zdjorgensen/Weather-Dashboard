@@ -1,0 +1,26 @@
+body {
+    font-size: 16px;
+    line-height: 1;
+}
+
+header {
+    background-color: rgb(19, 19, 85);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#search-container {
+    margin-left: 20px;
+    padding: 0;
+}
+
+#search-card {
+    border: none;
+}
+
+#previous-search {
+    font-size: 16px;
+    padding-left: 0;
+    margin: 10px;
+    list-style: none;
+}
