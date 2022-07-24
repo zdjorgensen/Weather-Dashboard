@@ -1,12 +1,20 @@
+:root {
+    --dark-blue: rgb(19, 19, 85);
+}
+
 body {
     font-size: 16px;
     line-height: 1;
 }
 
 header {
-    background-color: rgb(19, 19, 85);
+    background-color: var(--dark-blue);
     padding: 10px;
     margin-bottom: 10px;
+}
+
+hr {
+    background-color: white;
 }
 
 #search-container {
@@ -23,4 +31,18 @@ header {
     padding-left: 0;
     margin: 10px;
     list-style: none;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: solid;
+    border-color: white;
+    background-color: rgb(80, 80, 80);
+}
+
+li:hover {
+    background-color: var(--dark-blue);
+    cursor:pointer;
 }
