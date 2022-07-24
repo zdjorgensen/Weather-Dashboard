@@ -1,20 +1,29 @@
 :root {
     --dark-blue: rgb(19, 19, 85);
+    --grey: rgb(80, 80, 80);
 }
 
 body {
     font-size: 16px;
     line-height: 1;
+    background-color: rgb(52, 58, 64);
+    color: white;
 }
 
 header {
     background-color: var(--dark-blue);
+    border-bottom: solid;
+    border-color: var(--grey);
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 hr {
     background-color: white;
+}
+
+.row{
+    margin: 0px;
 }
 
 #search-container {
@@ -27,22 +36,61 @@ hr {
 }
 
 #previous-search {
-    font-size: 16px;
-    padding-left: 0;
-    margin: 10px;
+    padding-right: 40px;
     list-style: none;
 }
 
-li {
+#previous-search li {
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     border: solid;
+    border-radius: 10px;
     border-color: white;
     background-color: rgb(80, 80, 80);
 }
 
-li:hover {
+#previous-search li:hover {
     background-color: var(--dark-blue);
     cursor:pointer;
+}
+
+#current-location {
+    border: solid;
+    border-color: var(--dark-blue);
+    border-width: 6px;
+    height: 250px;
+}
+
+#current-info {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#current-info li {
+    margin: 10px;
+    padding: 10px;
+}
+
+#forecast-row{
+   width: 1000px
+}
+
+#forecast {
+    background-color: var(--dark-blue);
+    border: solid;
+    border-color: var(--grey);
+    margin: 10px;
+    height: 160px;
+
+}
+
+#forecast ul {
+    padding: 0px;
+}
+
+#forecast li {
+    list-style: none;
+    margin: 10px;
 }

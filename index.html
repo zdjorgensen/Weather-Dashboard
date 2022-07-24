@@ -10,41 +10,91 @@
   </head>
 
   <body class="bg-dark text-light">
-    <header class="contatiner">
+    <header>
       <h1 class="display-4 text-center"> Weather Dashboard </h1>
     </header>
 
-
-      <!-- Container for city search and previous searches -->
-      <div class="container" id="search-card" >
-        <div class="row">
-          <div class="col-lg-4">
-            <h1>Search for a City:</h1>
-              <form class="form-inline" >
-                <input class="form-control mr-sm-2" type="text" placeholder="Salt Lake City" id="city-name">
-                <button class="btn btn-primary" id="location-search" type="submit">Search</button>
-              </form>
-              <hr>
-            <ul id="previous-search" class="#"> <!-- Delete li -->
-              <li>Salt Lake City</li>
-              <li>Sioux Falls</li>
-              <li>Sioux Falls</li>
-              <li>Sioux Falls</li>
-              <li>Sioux Falls</li>
-              <li>Sioux Falls</li>
-              <li>Sioux Falls</li>
-            </ul>
-          </div>
+    <div class="container-fluid" >
+      <!-- City search and previous searches -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h1 class="text-center">Search for a City:</h2>
+            <form class="form-inline justify-content-center" >
+              <input class="form-control mr-sm-2" type="text" placeholder="Salt Lake City" id="city-name">
+              <button class="btn btn-primary" id="location-search" type="submit">Search</button>
+            </form>
+            <hr>
+          <ul id="previous-search" class="text-center">
+            <li>Salt Lake City</li>
+            <li>Sioux Falls</li>
+            <li>Sioux Falls</li>
+            <li>Sioux Falls</li>
+            <li>Sioux Falls</li>
+          </ul>
         </div>
 
-        <div class="row">
-          <div class="col-lg-8">
-            One of three columns
+        <!-- Current city and the current info -->
+        <div class="col-lg-8" id="current-location">
+          <h1> Test </h1>  
+          <ul id="current-info">
+            <li>Temp:</li>
+            <li>Wind:</li>
+            <li>Humidity:</li>
+            <li>UV Index:</li>
+          </ul>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="row" id="forecast-row">
+          <h4 class="col-12 mt-3"> 5-Day Forecast: </h3>
+          <div class="col-lg-2" id="forecast">
+            <h4> Date </h4>
+            <icon> # </icon>
+            <ul>
+              <li>Temp:</li>
+              <li>Wind:</li>
+              <li>Humidity:</li>
+            </ul>
+          </div>
+          <div class="col-lg-2" id="forecast">
+            <h4> Date </h4>
+            <icon> # </icon>
+            <ul>
+              <li>Temp:</li>
+              <li>Wind:</li>
+              <li>Humidity:</li>
+            </ul>
+          </div>
+          <div class="col-lg-2" id="forecast">
+            <h4> Date </h4>
+            <icon> # </icon>
+            <ul>
+              <li>Temp:</li>
+              <li>Wind:</li>
+              <li>Humidity:</li>
+            </ul>
+          </div>
+          <div class="col-lg-2" id="forecast">
+            <h4> Date </h4>
+            <icon> # </icon>
+            <ul>
+              <li>Temp:</li>
+              <li>Wind:</li>
+              <li>Humidity:</li>
+            </ul>
+          </div>
+          <div class="col-lg-2" id="forecast">
+            <h4> Date </h4>
+            <icon> # </icon>
+            <ul>
+              <li>Temp:</li>
+              <li>Wind:</li>
+              <li>Humidity:</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
 
 
       
