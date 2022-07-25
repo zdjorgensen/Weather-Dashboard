@@ -37,7 +37,7 @@ previousSearch.addEventListener('click', function (event) {
     getCity(previousCity);
 });
 
-// Gets the city name, date, and icon after the search button is clicked
+// Gets the city name, date, and icon after the search button or previous search is clicked
 function getCity (cityName) {
     var city = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + apiKey;
 
@@ -81,6 +81,7 @@ function getWeather (lat, lon){
         $('#curr-wind').text('Wind: ' + currWind + " MPH");
         $('#curr-hum').text('Humidity: ' + currHum);
         
+        // Checks to see if uv index is low, moderate, high, very high, or extreme
         if(currUV < 2) {
             $('#curr-uv').text('UV Index: ');
             $('#curr-uv').append(uvColor);
