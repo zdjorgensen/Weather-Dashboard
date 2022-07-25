@@ -18,12 +18,12 @@
       <!-- City search and previous searches -->
       <div class="row">
         <div class="col-lg-4">
-          <h1 class="text-center">Search for a City:</h2>
+          <h1 class="text-center">Search for a City:</h1>
             <form class="form-inline justify-content-center" >
               <input class="form-control mr-sm-2" type="text" placeholder="Salt Lake City" id="city-name">
               <button class="btn btn-primary" id="location-search" type="submit">Search</button>
             </form>
-            <hr>
+          <hr>
           <ul id="previous-search" class="text-center">
             <li>Salt Lake City</li>
             <li>Sioux Falls</li>
@@ -35,68 +35,68 @@
 
         <!-- Current city and the current info -->
         <div class="col-lg-8" id="current-location">
-          <h1> Test </h1>  
-          <ul id="current-info">
-            <li>Temp:</li>
-            <li>Wind:</li>
-            <li>Humidity:</li>
-            <li>UV Index:</li>
+          <h1 id = curr-day> City </h1>  
+          <ul id="current-info" >
+            <li id="curr-temp">Temp:</li>
+            <li id="curr-wind">Wind:</li>
+            <li id="curr-hum">Humidity:</li>
+            <li id="curr-uv">UV Index:
+              <div class="uv-color"> </div>
+            </li>
           </ul>
-        </div>
-
-        <!-- 5-Day Forecast -->
-        <div class="row" id="forecast-row">
-          <h4 class="col-12 mt-3"> 5-Day Forecast: </h3>
-          <div class="col-lg-2" id="forecast">
-            <h4> Date </h4>
-            <icon> # </icon>
-            <ul>
-              <li>Temp:</li>
-              <li>Wind:</li>
-              <li>Humidity:</li>
-            </ul>
-          </div>
-          <div class="col-lg-2" id="forecast">
-            <h4> Date </h4>
-            <icon> # </icon>
-            <ul>
-              <li>Temp:</li>
-              <li>Wind:</li>
-              <li>Humidity:</li>
-            </ul>
-          </div>
-          <div class="col-lg-2" id="forecast">
-            <h4> Date </h4>
-            <icon> # </icon>
-            <ul>
-              <li>Temp:</li>
-              <li>Wind:</li>
-              <li>Humidity:</li>
-            </ul>
-          </div>
-          <div class="col-lg-2" id="forecast">
-            <h4> Date </h4>
-            <icon> # </icon>
-            <ul>
-              <li>Temp:</li>
-              <li>Wind:</li>
-              <li>Humidity:</li>
-            </ul>
-          </div>
-          <div class="col-lg-2" id="forecast">
-            <h4> Date </h4>
-            <icon> # </icon>
-            <ul>
-              <li>Temp:</li>
-              <li>Wind:</li>
-              <li>Humidity:</li>
-            </ul>
+          
+          <!-- 5-Day Forecast -->
+          <div class="row">
+            <h4 class="col-12 mt-5"> 5-Day Forecast: </h4>
+            <div class="col-lg-2 forecast" id="forecast-card">
+              <h4 id="future-date"> Date </h4>
+              <icon id="future-icon"> # </icon>
+              <ul>
+                <li id="future-temp">Temp:</li>
+                <li id="future-wind">Wind:</li>
+                <li id="future-hum">Humidity:</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 forecast" id="forecast-card">
+              <h4 id="future-date"> Date </h4>
+              <icon id="future-icon"> # </icon>
+              <ul>
+                <li id="future-temp">Temp:</li>
+                <li id="future-wind">Wind:</li>
+                <li id="future-hum">Humidity:</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 forecast" id="forecast-card">
+              <h4 id="future-date"> Date </h4>
+              <icon id="future-icon"> # </icon>
+              <ul>
+                <li id="future-temp">Temp:</li>
+                <li id="future-wind">Wind:</li>
+                <li id="future-hum">Humidity:</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 forecast" id="forecast-card">
+              <h4 id="future-date"> Date </h4>
+              <icon id="future-icon"> # </icon>
+              <ul>
+                <li id="future-temp">Temp:</li>
+                <li id="future-wind">Wind:</li>
+                <li id="future-hum">Humidity:</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 forecast" id="forecast-card">
+              <h4 id="future-date"> Date </h4>
+              <icon id="future-icon"> # </icon>
+              <ul>
+                <li id="future-temp">Temp:</li>
+                <li id="future-wind">Wind:</li>
+                <li id="future-hum">Humidity:</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
       
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -26,6 +26,39 @@ hr {
     margin: 0px;
 }
 
+.uv-color  {
+    position: relative;
+    left: 70px;
+    bottom: 22px;
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.low {
+    background-color: green;
+
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.high {
+    background-color: orange;
+}
+
+.very-high {
+    background-color: red;
+}
+
+.extreme {
+    background-color: purple;
+}
+
 #search-container {
     margin-left: 20px;
     padding: 0;
@@ -59,7 +92,7 @@ hr {
     border: solid;
     border-color: var(--dark-blue);
     border-width: 6px;
-    height: 250px;
+    height: 300px;
 }
 
 #current-info {
@@ -73,24 +106,19 @@ hr {
     padding: 10px;
 }
 
-#forecast-row{
-   width: 1000px
-}
-
-#forecast {
+#forecast-card {
     background-color: var(--dark-blue);
     border: solid;
     border-color: var(--grey);
     margin: 10px;
-    height: 160px;
-
 }
 
-#forecast ul {
+#forecast-card ul {
     padding: 0px;
 }
 
-#forecast li {
+#forecast-card li {
     list-style: none;
     margin: 10px;
 }
+
