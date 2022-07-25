@@ -1,19 +1,39 @@
 var previousSearch = document.querySelector('.previous-search');
+var previousList = document.getElementById('previous-list');
 var uvColor = $(".uv-color");
 var apiKey = "d90c570eff9716afb2d29265fa851068";
 
-// Calls getCity once user has searched for a city
+// https://www.youtube.com/watch?v=nGVoHEZojiQ&ab_channel=SteveGriffith-Prof3ssorSt3v3 OpenWeatherMap Api help src
+
+// Gets items from local storage and passes it to createLi
+function init() {
+    for(var i = 0; i<localStorage.length; i++) {
+        var storedKey = localStorage.key(i);
+        if(storedKey !== null){
+            createLi(storedKey);
+        }
+    }
+}
+
+// Creates and li element for each city searched and adds it to local storage
+function createLi (cityName) {
+    var li = document.createElement("li");
+    li.textContent = cityName;
+    previousSearch.appendChild(li);
+}
+
+// Calls getCity and createLI once user has searched for a city
 $('#location-search').on('click', function (event) {
     event.preventDefault();
     var cityName = $('#city-name').val().trim();
     getCity(cityName);
+    localStorage.setItem(cityName, JSON.stringify(cityName));
 });
 
 // Calls getCity once a previous searched city has been clicked
 previousSearch.addEventListener('click', function (event) {
     var element = event.target;
     var previousCity = element.innerHTML;
-    
     getCity(previousCity);
 });
 
@@ -36,8 +56,8 @@ function getCity (cityName) {
         var currDay = new Date(data.dt * 1000).toLocaleDateString();
         $('#curr-day').text(data.name + ",  " + currDay);
         getWeather(lat, lon);
+        createLi(cityName)
     });
-    // todo: safe to local storage and call function to add to li 
 }
 
 // Gets the temp, wind, humidity, and uv index for the city
@@ -49,7 +69,6 @@ function getWeather (lat, lon){
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
         var currTemp = data.current.temp;
         var currHum = data.current.humidity;
         var currUV = data.current.uvi;
@@ -119,3 +138,5 @@ function getForecast(lat, lon) {
         }
     });
 };
+
+init();
