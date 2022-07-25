@@ -24,18 +24,16 @@
               <button class="btn btn-primary" id="location-search" type="submit">Search</button>
             </form>
           <hr>
-          <ul id="previous-search" class="text-center">
-            <li>Salt Lake City</li>
-            <li>Sioux Falls</li>
-            <li>Sioux Falls</li>
-            <li>Sioux Falls</li>
-            <li>Sioux Falls</li>
+          <ul class="previous-search text-center">
+            <li id="previous-city">Salt Lake City</li>
+            <li id="previous-city" >Sioux Falls</li>
           </ul>
         </div>
 
         <!-- Current city and the current info -->
         <div class="col-lg-8" id="current-location">
-          <h1 id = curr-day> City </h1>  
+          <h1 id = curr-day> City </h1>
+          <img id="curr-img" src="">
           <ul id="current-info" >
             <li id="curr-temp">Temp:</li>
             <li id="curr-wind">Wind:</li>
@@ -50,7 +48,7 @@
             <h4 class="col-12 mt-5"> 5-Day Forecast: </h4>
             <div class="col-lg-2 forecast" id="forecast-card">
               <h4 id="future-date"> Date </h4>
-              <icon id="future-icon"> # </icon>
+              <img id="future-img" src="">
               <ul>
                 <li id="future-temp">Temp:</li>
                 <li id="future-wind">Wind:</li>
@@ -59,7 +57,7 @@
             </div>
             <div class="col-lg-2 forecast" id="forecast-card">
               <h4 id="future-date"> Date </h4>
-              <icon id="future-icon"> # </icon>
+              <img id="future-img" src="">
               <ul>
                 <li id="future-temp">Temp:</li>
                 <li id="future-wind">Wind:</li>
@@ -68,7 +66,7 @@
             </div>
             <div class="col-lg-2 forecast" id="forecast-card">
               <h4 id="future-date"> Date </h4>
-              <icon id="future-icon"> # </icon>
+              <img id="future-img" src="">
               <ul>
                 <li id="future-temp">Temp:</li>
                 <li id="future-wind">Wind:</li>
@@ -77,7 +75,7 @@
             </div>
             <div class="col-lg-2 forecast" id="forecast-card">
               <h4 id="future-date"> Date </h4>
-              <icon id="future-icon"> # </icon>
+              <img id="future-img" src="">
               <ul>
                 <li id="future-temp">Temp:</li>
                 <li id="future-wind">Wind:</li>
@@ -86,7 +84,7 @@
             </div>
             <div class="col-lg-2 forecast" id="forecast-card">
               <h4 id="future-date"> Date </h4>
-              <icon id="future-icon"> # </icon>
+              <img id="future-img" src="">
               <ul>
                 <li id="future-temp">Temp:</li>
                 <li id="future-wind">Wind:</li>
@@ -99,7 +97,6 @@
     </div>
       
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

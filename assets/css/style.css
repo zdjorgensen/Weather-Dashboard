@@ -68,12 +68,12 @@ hr {
     border: none;
 }
 
-#previous-search {
+.previous-search {
     padding-right: 40px;
     list-style: none;
 }
 
-#previous-search li {
+.previous-search li {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 25px;
@@ -83,7 +83,7 @@ hr {
     background-color: rgb(80, 80, 80);
 }
 
-#previous-search li:hover {
+.previous-search li:hover {
     background-color: var(--dark-blue);
     cursor:pointer;
 }
@@ -92,7 +92,7 @@ hr {
     border: solid;
     border-color: var(--dark-blue);
     border-width: 6px;
-    height: 300px;
+    height: 310px;
 }
 
 #current-info {
